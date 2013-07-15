@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/kmmslide.css" />
+		<style>
+		   *{padding:0;margin:0;}
+		</style>
+	</head>
+	<body>	
+	<div id="div1"></div>
+	<script type="text/javascript" src="require.js"></script>
+	<script type="text/javascript">
+	   require(["kmmslide"],function(kmmslide){
+		     kmmslide.init({
+	        target : 'div1',
+		     width : 1600,
+		     height : 400,
+		     pics : [
+		       {
+			        pic:'images/1.jpg',
+				     url:'http://wowboo.com/'
+			    },
+			    {
+			        pic:'images/2.jpg',
+				     url:'http://wowboo.com/'
+			    },
+			    {
+			        pic:'images/3.jpg',
+				     url:'http://wowboo.com/'
+			     }
+		       ]
+	      });
+	   
+	   });
+	</script>
+	</body>
+
+</html>
