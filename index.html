@@ -1,1 +1,91 @@
-s
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Kmmslide.js by scottkiss</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Kmmslide.js</h1>
+        <h2>Simple javascript slider plugin</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/scottkiss/kmmslide.js/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/scottkiss/kmmslide.js/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/scottkiss/kmmslide.js" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>How to use.</h3>
+
+<p>use as global variable:</p>
+
+<pre><code>
+ kmmslide.init({
+        target : 'targetDiv',
+       width : 1600,
+		   height : 400,
+		   speed : 4000,
+		   pics : [
+		     {
+			     pic:'images/1.jpg',
+				  url:'http://wowboo.com/'
+			 },
+			  {
+			     pic:'images/2.jpg',
+				  url:'http://wowboo.com/'
+			 },
+			 {
+			    pic:'images/3.jpg',
+				 url:'http://wowboo.com/'
+			 }
+		   ]
+	   });
+</code></pre>
+
+<p>use as an AMD module(e.g. require.js):</p>
+
+<pre><code>
+    require(["kmmslide"],function(kmmslide){
+		     kmmslide.init({
+	        target : 'targetDiv',
+		     width : 1600, 
+		     height : 400,
+		     pics : [
+		       {
+			        pic:'images/1.jpg',
+				     url:'http://wowboo.com/'
+			    },
+			    {
+			        pic:'images/2.jpg',
+				     url:'http://wowboo.com/'
+			    },
+			    {
+			        pic:'images/3.jpg',
+				     url:'http://wowboo.com/'
+			     }
+		       ]
+	      });
+	   
+	   });
+</code></pre>
+<h3>online demo</h3>
+ </section>	
+</div>
+
+    
+  </body>
+</html>
