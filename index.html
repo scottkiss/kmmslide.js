@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/kmmslide.min.css" media="screen" />
 
     <title>Kmmslide.js by scottkiss</title>
   </head>
@@ -83,9 +84,37 @@
 	   });
 </code></pre>
 <h3>online demo</h3>
+<div id="div1">ss</div>
+
  </section>	
 </div>
 
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/kmmslide.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		 kmmslide.init({
+	      target : 'div1',
+		   width : 1600,
+		   height : 400,
+		   speed : 4000,
+		   pics : [
+		     {
+			     pic:'images/1.jpg',
+				  url:'http://wowboo.com/'
+			 },
+			  {
+			     pic:'images/2.jpg',
+				  url:'http://wowboo.com/'
+			 },
+			 {
+			    pic:'images/3.jpg',
+				 url:'http://wowboo.com/'
+			 }
+		   ]
+	   });
+		}
+		);
+	</script>
   </body>
 </html>
